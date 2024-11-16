@@ -3,8 +3,27 @@
 @tailwind utilities;
 
 :root {
+  --hex_font_family: "Mulish", sans-serif;
   --background: #ffffff;
   --foreground: #171717;
+  --red: #dd0735;
+  --dark-blue: #101420;
+  --light-blue: #1a1c2b;
+  --hex_home_common_title_color: #020a19;
+  --hex_home_form_text_color_dark: #020a19;
+  --hex_testimonial_text_color: #191919;
+  --light-gray: #707070;
+  --light-green: #f5faff;
+  ---text-gray: #556575;
+  --blue: #0549d1;
+  --hex_font_thin: 300;
+  --hex_font_light: 400;
+  --hex_font_normal: 400;
+  --hex_font_medium: 500;
+  --hex_font_midbold: 600;
+  --hex_font_semibold: 700;
+  --hex_font_bold: 700;
+  --hex_font_extrabold: 800;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,7 +34,4 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }

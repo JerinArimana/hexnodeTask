@@ -1,0 +1,123 @@
+.research-service {
+  &__item_wrapper {
+    opacity: 0.6;
+    a {
+      color: var(--background);
+      &:nth-child(1) {
+        img {
+          width: 85px;
+        }
+      }
+      &:nth-child(2) {
+        @media ($upto-small) {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          display: block;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 40%;
+            background-color: var(--background);
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 40%;
+            background-color: var(--background);
+            top: auto;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+        img {
+          width: 110px;
+        }
+      }
+      &:nth-child(3) {
+        img {
+          width: 156px;
+        }
+      }
+      &:nth-child(2) {
+        border-left: 1px solid #ffffff66;
+        border-right: 1px solid #ffffff66;
+        @media ($upto-small) {
+          border-left: 0px solid #ffffff66;
+          border-right: 0px solid #ffffff66;
+        }
+      }
+    }
+  }
+  &__item {
+    @media ($upto-small) {
+      max-width: 350px;
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}
+
+.solutionGrid-excel {
+  &__wrapper {
+    h3 {
+      color: var(--hex_home_common_title_color);
+    }
+    button {
+      color: var(--light-gray);
+    }
+  }
+  &__item {
+    cursor: pointer;
+    transition: all 2s;
+    &:hover {
+      .item_info {
+        transform: translateY(-4px);
+        transition: all 0.5s;
+      }
+    }
+  }
+}
+
+.multiTab {
+  &__wrapper {
+    .nav-tabs {
+      .nav-link {
+        color: var(--hex_home_form_text_color_dark);
+        font-size: 20px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        border: unset;
+        &.active {
+          border-bottom: 2px solid var(--blue);
+
+          color: var(--blue);
+        }
+      }
+    }
+  }
+}
+
+.testimonial_modal {
+  .modal-content {
+    position: relative;
+    // min-height: 500px;
+    .modal-header {
+      position: absolute;
+      right: -15px;
+      top: -38px;
+      z-index: 1;
+      border: unset;
+    }
+  }
+}
