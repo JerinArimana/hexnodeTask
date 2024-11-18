@@ -1,4 +1,33 @@
 .hex_header {
+  .blackLogo {
+    display: none;
+  }
+  .whiteLogo {
+    display: block;
+  }
+  .navbar-toggler {
+    border: 1px solid white;
+    background-color: white;
+  }
+  &.active {
+    background-color: white;
+    border-bottom: 1px solid #80808061;
+    .nav-link {
+      color: black !important;
+    }
+    .hex_header__hex_top_nav_list li {
+      color: black !important;
+    }
+    .hex_header__hex_top_nav_list button {
+      color: black !important;
+    }
+    .blackLogo {
+      display: block;
+    }
+    .whiteLogo {
+      display: none;
+    }
+  }
   &__hex_top_nav_list {
     margin: 0rem;
     padding: 0rem;
@@ -58,5 +87,10 @@
       color: var(--background) !important;
     }
   }
-  // ............
+
+  .hex_header__hex_top_nav {
+    @media ($upto-medium) {
+      display: none;
+    }
+  }
 }

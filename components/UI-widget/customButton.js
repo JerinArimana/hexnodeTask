@@ -5,7 +5,7 @@ const CustomButton = ({ outline, label, ...props }) => {
     <>
       <Link {...props} className="max-w-[220px]">
         <button
-          className={`w-full py-3 px-11 text-white ${
+          className={`w-full py-3 px-3 text-white ${
             outline ? "border" : "bg-[#dd0735] "
           }`}
           {...props}

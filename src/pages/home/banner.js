@@ -8,12 +8,12 @@ const Banner = () => {
   return (
     <>
       <div className="grid grid-cols-1 gap-8 md:gap-9 lg:gap-40 lg:grid-cols-2  items-center  md:text-left">
-        <div>
+        <div className="banner_info">
           <SectionHeader
             title={`The Standard for Unified Endpoint Management`}
             text={`Manage devices of varying form factors and operating systems with one solution`}
           />
-          <div className="flex gap-4 m-auto justify-center lg:justify-start">
+          <div className="banner_btn flex gap-4 m-auto justify-center lg:justify-start">
             <CustomButton
               href={""}
               label={"TRY FOR FREE"}
@@ -27,7 +27,7 @@ const Banner = () => {
             />
           </div>
         </div>
-        <div className=" m-auto w-1/2 lg:w-full">
+        <div className=" m-auto sm:w-1/2 lg:w-full">
           <Image
             className="w-full"
             src="/images/device-management-automated.jpg"

@@ -1,0 +1,7 @@
+<svg id="book" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <path id="Vector" d="M26.669,18.773V2.677A2.627,2.627,0,0,0,23.776.023H23.7a25.137,25.137,0,0,0-9.428,3.16l-.227.147a1.477,1.477,0,0,1-1.413,0l-.333-.2A25.011,25.011,0,0,0,2.88.01,2.623,2.623,0,0,0,0,2.664V18.773a2.74,2.74,0,0,0,2.32,2.64l.387.053a34.259,34.259,0,0,1,9.921,3.254l.053.027a1.44,1.44,0,0,0,1.28,0,33.95,33.95,0,0,1,9.948-3.28l.44-.053A2.74,2.74,0,0,0,26.669,18.773Z" transform="translate(2.665 3.548)" fill="#020a19" stroke="#f2f8fc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  <path id="Vector-2" data-name="Vector" d="M0,0V19.991" transform="translate(16 7.331)" fill="none" stroke="#f2f8fc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  <path id="Vector-3" data-name="Vector" d="M3,0H0" transform="translate(7.334 11.32)" fill="none" stroke="#f2f8fc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  <path id="Vector-4" data-name="Vector" d="M4,0H0" transform="translate(7.334 15.32)" fill="none" stroke="#f2f8fc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  <path id="Vector-5" data-name="Vector" d="M0,0H32V32H0Z" transform="translate(32 32) rotate(180)" fill="none" opacity="0"/>
+</svg>

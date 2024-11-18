@@ -1,0 +1,5 @@
+<svg id="play-circle" xmlns="http://www.w3.org/2000/svg" width="30.936" height="30.936" viewBox="0 0 30.936 30.936">
+  <path id="Vector" d="M25.78,12.89A12.89,12.89,0,1,1,12.89,0,12.89,12.89,0,0,1,25.78,12.89Z" transform="translate(2.539 2.578)" fill="#020a19" stroke="#f2f8fc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  <path id="Vector-2" data-name="Vector" d="M0,5.161V3.009C0,.327,1.895-.768,4.215.572L6.084,1.655,7.953,2.738c2.32,1.341,2.32,3.532,0,4.872L6.084,8.693,4.215,9.776C1.895,11.116,0,10.021,0,7.34Z" transform="translate(11.266 10.603)" fill="#fff"/>
+  <path id="Vector-3" data-name="Vector" d="M0,0H30.936V30.936H0Z" fill="none" opacity="0"/>
+</svg>

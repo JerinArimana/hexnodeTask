@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 import Dropdown from "react-bootstrap/Dropdown";
@@ -6,22 +6,47 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { useState } from "react";
+
 import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import hexcon24_logo from "../public/images/hexcon24-logo.svg";
+import hexcon24_logoWhite from "../public/images/hexcon24-logoWhite.png";
+
 const Header = () => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const [isActive, setIsActive] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsActive(true);
+      } else {
+        setIsActive(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <header className="hex_header fixed w-full top-0 left-0">
+      <header
+        className={`hex_header fixed w-full top-0 left-0 z-50 ${
+          isActive ? "active" : ""
+        }`}
+      >
         <div className="hex_custom_container">
           <div className="hex_header__hex_top_nav">
             <ul className="hex_header__hex_top_nav_list flex justify-end gap-3 md:gap-3 text-[13px]">
-              <li>What's new</li>
+              <li>{`What's new`}</li>
               <li className="demo-nav">
                 <Dropdown>
                   <Dropdown.Toggle
@@ -54,10 +79,18 @@ const Header = () => {
             <>
               <Navbar.Brand href="#home">
                 <Image
-                  src="https://static.hexnode.com/img/events/hexcon24/hexcon24-logo.svg"
+                  src={hexcon24_logo}
                   width={120}
                   height={25}
                   alt="Hexcon 24 Logo"
+                  className="blackLogo"
+                />
+                <Image
+                  src={hexcon24_logoWhite}
+                  width={120}
+                  height={25}
+                  alt="Hexcon 24 Logo"
+                  className="whiteLogo"
                 />
               </Navbar.Brand>
 

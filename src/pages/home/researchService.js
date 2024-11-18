@@ -29,6 +29,7 @@ const ResearchService = () => {
       <div className="research-service__item_wrapper md:flex">
         {researchData.map((data) => (
           <ResearchServiceCard
+            key={data.id}
             href={data.href}
             researchBrand={data.researchBrand}
             researchText={data.researchText}

@@ -1,0 +1,33 @@
+.footer {
+  .social_profile {
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .usersExisting {
+    button {
+      color: black !important;
+      border: 1px solid var(--hex_home_common_text_color) !important;
+      padding-top: 0.5rem !important;
+      padding-bottom: 0.5rem !important;
+      border-radius: 0.5rem;
+    }
+  }
+  .accordion-item {
+    background-color: unset;
+    border: unset;
+    .accordion-header {
+      button {
+        background-color: unset;
+        border: unset;
+        padding-left: 0rem;
+        padding-right: 0rem;
+      }
+    }
+    .accordion-body {
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+  }
+}

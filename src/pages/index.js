@@ -5,6 +5,9 @@ import ResearchService from "./home/researchService";
 import SolutionGridExcel from "./home/solutionGridExcel";
 import LogoGrop from "./home/logoGroup";
 import MultiTab from "./home/multiTab";
+import Webinar from "./home/webinar";
+import SignupSection from "./home/signupSection";
+import Footer from "../../components/Footer";
 
 export default function Home() {
   return (
@@ -36,7 +39,18 @@ export default function Home() {
             <MultiTab />
           </div>
         </section>
+        <section className="webinar bg-[#f5faff]  py-[50px]">
+          <div className="hex_custom_container">
+            <Webinar />
+          </div>
+        </section>
+        <section className="signup_bottom bg-[#020a19] py-[50px]">
+          <div className="hex_custom_container">
+            <SignupSection />
+          </div>
+        </section>
       </main>
+      <Footer />
     </>
   );
 }

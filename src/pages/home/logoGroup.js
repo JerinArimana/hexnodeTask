@@ -50,7 +50,7 @@ const LogoGrop = () => {
 
           <div className="olution-logoGroup__md_brandLogo grid grid-cols-2 sm:grid-cols-3 md:hidden">
             {logoList.map((data) => (
-              <div>
+              <div key={data.id}>
                 <Image
                   src={data.src}
                   width={210}

@@ -1,3 +1,20 @@
+.banner {
+  .banner_btn {
+    @media ($mobile) {
+      flex-direction: column;
+      align-items: center;
+    }
+    a {
+      width: 100%;
+    }
+  }
+  .banner_info {
+    @media ($upto-medium) {
+      text-align: center;
+    }
+  }
+}
+
 .research-service {
   &__item_wrapper {
     opacity: 0.6;
@@ -98,11 +115,87 @@
         padding-left: 3rem;
         padding-right: 3rem;
         border: unset;
+        @media ($mobile) {
+          font-size: 12px;
+          padding-left: 0.5rem;
+          padding-right: 0.5rem;
+        }
+        @media ($small) {
+          font-size: 16px;
+          padding-left: 2rem;
+          padding-right: 2rem;
+        }
+        @media ($medium) {
+          font-size: 16px;
+          padding-left: 2rem;
+          padding-right: 2rem;
+        }
+        @media ($large) {
+          font-size: 16px;
+          padding-left: 2rem;
+          padding-right: 2rem;
+        }
         &.active {
           border-bottom: 2px solid var(--blue);
 
           color: var(--blue);
         }
+      }
+    }
+    .tabNav_menu {
+      margin-bottom: 4rem !important;
+      max-width: 673px;
+      margin: 0 auto;
+      @media ($upto-medium) {
+        max-width: 500px;
+      }
+    }
+    .swiper-button-prev {
+      right: 6.5rem;
+      left: auto;
+      top: auto;
+      bottom: 2rem;
+      @media ($upto-small) {
+        // right: 11.5rem;
+        left: 53%;
+        transform: translateX(-53%);
+      }
+      &:after {
+        font-size: 0px;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border: 1px solid black;
+        background-image: url("/images/linear-arrow-disabled.svg");
+        border-radius: 100%;
+        background-size: auto;
+      }
+    }
+    .swiper-button-next {
+      right: 3rem;
+      bottom: 2rem;
+      top: auto;
+      @media ($upto-small) {
+        right: 53%;
+        transform: translateX(-53%);
+      }
+
+      &::after {
+        font-size: 0px;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: black;
+        transform: translate(0%, 0%) rotate(180deg);
+        background-image: url("/images/linear-arrow.svg");
+        border-radius: 100%;
+        background-size: auto;
       }
     }
   }
@@ -118,6 +211,96 @@
       top: -38px;
       z-index: 1;
       border: unset;
+    }
+  }
+}
+
+.case-studies {
+  &__wrapper {
+    position: relative;
+    .case_studies_hover {
+      opacity: 0;
+      transition: all 0.4s cubic-bezier(0.43, 0.27, 0.39, 0.88);
+    }
+    &:hover {
+      .thumbImage {
+        filter: blur(5px);
+        transition: all 0.3s cubic-bezier(0.25, 0.5, 0.75, 1);
+      }
+      .case-studies__image {
+        &:after {
+          content: "";
+          // display: block;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          position: absolute;
+          z-index: 0;
+
+          -webkit-transition: all 0.4s cubic-bezier(0.43, 0.27, 0.39, 0.88);
+          -moz-transition: all 0.4s cubic-bezier(0.43, 0.27, 0.39, 0.88);
+          -ms-transition: all 0.4s cubic-bezier(0.43, 0.27, 0.39, 0.88);
+          -o-transition: all 0.4s cubic-bezier(0.43, 0.27, 0.39, 0.88);
+          transition: all 0.4s cubic-bezier(0.43, 0.27, 0.39, 0.88);
+        }
+      }
+      .case_studies_hover {
+        opacity: 1;
+        transition: all 0.4s cubic-bezier(0.43, 0.27, 0.39, 0.88);
+      }
+    }
+    .case_studies_hover_item {
+      &.first_item {
+        &::after {
+          position: absolute;
+          content: "";
+          width: 50%;
+          height: 3px;
+          background-color: white;
+          bottom: 0rem;
+          left: auto;
+        }
+      }
+    }
+  }
+}
+
+.webinar {
+  &__speaker {
+    @media ($upto-small) {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+    }
+  }
+}
+
+.signup_bottom {
+  button {
+    border-radius: 0.25rem !important;
+  }
+  .input_item {
+    border-radius: 0.25rem !important;
+    @media ($upto-small) {
+      width: 100%;
+    }
+
+    .form-control {
+      padding: 1.1rem 0.75rem;
+      border-radius: 0.25rem !important;
+    }
+  }
+  a {
+    max-width: 280px;
+    @media ($upto-small) {
+      width: 100%;
     }
   }
 }

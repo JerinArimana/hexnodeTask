@@ -12,3 +12,25 @@
   // font-size: 18px;
   line-height: 24px;
 }
+
+/* For larger screens: Keep Accordion open and unclickable */
+@media (min-width: 769px) {
+  .desktop-accordion-open .accordion-item .accordion-button {
+    pointer-events: none; /* Disable clicking */
+  }
+
+  .desktop-accordion-open .accordion-item .accordion-collapse {
+    display: block !important; /* Keep the Accordion always open */
+  }
+}
+
+/* Default behavior for mobile devices: Accordion is clickable */
+@media (max-width: 768px) {
+  .desktop-accordion-open .accordion-item .accordion-button {
+    pointer-events: auto; /* Enable clicking */
+  }
+
+  .desktop-accordion-open .accordion-item .accordion-collapse {
+    // display: none; /* Allow default collapse behavior */
+  }
+}

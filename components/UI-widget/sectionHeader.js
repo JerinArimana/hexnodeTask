@@ -4,7 +4,7 @@ const SectionHeader = ({ title, text, dark }) => {
       <h1
         className={`sec-title pb-3 ${
           dark ? "text-black" : "text-white"
-        } text-[32px] md:text-[42px]`}
+        } text-[30px] md:text-[40px] `}
       >
         {title}
       </h1>
