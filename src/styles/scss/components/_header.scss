@@ -94,3 +94,36 @@
     }
   }
 }
+
+.offcanvas-body {
+  .navbar-nav {
+    @media ($upto-medium) {
+      margin-bottom: 3rem;
+    }
+  }
+  .nav__item {
+    @media ($upto-medium) {
+      flex-direction: column;
+    }
+    .dropdown-menu {
+      border: unset !important;
+    }
+    .nav-link {
+      @media ($upto-medium) {
+        border-bottom: 2px solid #80808029 !important;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.menu_count {
+  margin: 0 auto;
+  .dropdown-item {
+    white-space: pre-wrap !important;
+    border-bottom: 2px solid #80808029 !important;
+    &:hover {
+    }
+  }
+}

@@ -105,30 +105,71 @@ const Header = () => {
               ></Navbar.Collapse> */}
 
               {/* Offcanvas for mobile view */}
-              <Offcanvas show={show} onHide={handleClose} responsive="lg">
+              <Offcanvas
+                show={show}
+                onHide={handleClose}
+                responsive="lg"
+                placement="end"
+              >
                 <Offcanvas.Header closeButton>
                   <Offcanvas.Title>Menu</Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                  <div className="nav__item flex justify-between">
+                  <div className="nav__item flex justify-between ">
                     <Nav>
                       <NavDropdown
                         title="Solutions"
                         id="offcanvas-nav-dropdown1"
                       >
-                        <ul>
-                          <NavDropdown.Item href="#action/3.1">
-                            Action
+                        <ul className="menu_count lg:w-10/12 grid grid-cols-1 lg:grid-cols-3 gap-3 text-left p-0">
+                          <NavDropdown.Item
+                            href="#action/3.1"
+                            className="max-w-[333px] px-0 hover:border-l-4 border-indigo-500 "
+                          >
+                            <h6 className="text-[16px] lg:font-bold">
+                              Hexnode UEM
+                            </h6>
+                            <p className="hidden lg:block text-[13px] font-normal text-[#020a19]">
+                              Centralize management of mobiles, PCs and
+                              wearables in the enterprise
+                            </p>
                           </NavDropdown.Item>
-                          <NavDropdown.Item href="#action/3.2">
-                            Another action
+                          <NavDropdown.Item
+                            href="#action/3.1"
+                            className="max-w-[333px] px-0 hover:border-l-4 border-indigo-500"
+                          >
+                            <h6 className="text-[16px] lg:font-bold">
+                              Hexnode UEM
+                            </h6>
+                            <p className="hidden lg:block text-[13px] font-normal text-[#020a19]">
+                              Centralize management of mobiles, PCs and
+                              wearables in the enterprise
+                            </p>
                           </NavDropdown.Item>
-                          <NavDropdown.Item href="#action/3.3">
-                            Something
+                          <NavDropdown.Item
+                            href="#action/3.1"
+                            className="max-w-[333px] px-0 hover:border-l-4 border-indigo-500"
+                          >
+                            <h6 className="text-[16px] lg:font-bold">
+                              Hexnode UEM
+                            </h6>
+                            <p className="hidden lg:block text-[13px] font-normal text-[#020a19]">
+                              Centralize management of mobiles, PCs and
+                              wearables in the enterprise
+                            </p>
                           </NavDropdown.Item>
 
-                          <NavDropdown.Item href="#action/3.4">
-                            Separated link
+                          <NavDropdown.Item
+                            href="#action/3.1"
+                            className="max-w-[333px] px-0 hover:border-l-4 border-indigo-500"
+                          >
+                            <h6 className="text-[16px] lg:font-bold">
+                              Hexnode UEM
+                            </h6>
+                            <p className="hidden lg:block text-[13px] font-normal text-[#020a19]">
+                              Centralize management of mobiles, PCs and
+                              wearables in the enterprise
+                            </p>
                           </NavDropdown.Item>
                         </ul>
                       </NavDropdown>
@@ -138,19 +179,55 @@ const Header = () => {
                         title="Partners"
                         id="offcanvas-nav-dropdown2"
                       >
-                        <ul>
-                          <NavDropdown.Item href="#action/3.1">
-                            Action
+                        <ul className="menu_count lg:w-10/12 grid grid-cols-1 lg:grid-cols-3 gap-3 text-left p-0">
+                          <NavDropdown.Item
+                            href="#action/3.1"
+                            className="max-w-[333px] px-0 hover:border-l-4 border-indigo-500 "
+                          >
+                            <h6 className="text-[16px] lg:font-bold">
+                              Hexnode Partner Programs
+                            </h6>
+                            <p className="hidden lg:block text-[13px] font-normal text-[#020a19]">
+                              Explore every partnership program offered by
+                              Hexnode
+                            </p>
                           </NavDropdown.Item>
-                          <NavDropdown.Item href="#action/3.2">
-                            Another action
+                          <NavDropdown.Item
+                            href="#action/3.1"
+                            className="max-w-[333px] px-0 hover:border-l-4 border-indigo-500"
+                          >
+                            <h6 className="text-[16px] lg:font-bold">
+                              Reseller Partnership
+                            </h6>
+                            <p className="hidden lg:block text-[13px] font-normal text-[#020a19]">
+                              Deliver the world-class mobile & PC security
+                              solution to your clients
+                            </p>
                           </NavDropdown.Item>
-                          <NavDropdown.Item href="#action/3.3">
-                            Something
+                          <NavDropdown.Item
+                            href="#action/3.1"
+                            className="max-w-[333px] px-0 hover:border-l-4 border-indigo-500"
+                          >
+                            <h6 className="text-[16px] lg:font-bold">
+                              MSP Partnership
+                            </h6>
+                            <p className="hidden lg:block text-[13px] font-normal text-[#020a19]">
+                              Help your clients scale up their endpoint
+                              management efforts
+                            </p>
                           </NavDropdown.Item>
 
-                          <NavDropdown.Item href="#action/3.4">
-                            Separated link
+                          <NavDropdown.Item
+                            href="#action/3.1"
+                            className="max-w-[333px] px-0 hover:border-l-4 border-indigo-500"
+                          >
+                            <h6 className="text-[16px] lg:font-bold">
+                              OEM Partnership
+                            </h6>
+                            <p className="hidden lg:block text-[13px] font-normal text-[#020a19]">
+                              Integrate with Hexnode for the complete management
+                              of your devices
+                            </p>
                           </NavDropdown.Item>
                         </ul>
                       </NavDropdown>
@@ -159,19 +236,53 @@ const Header = () => {
                         title="Contact Us"
                         id="offcanvas-nav-dropdown3"
                       >
-                        <ul>
-                          <NavDropdown.Item href="#action/3.1">
-                            Action
+                        <ul className="menu_count lg:w-10/12 grid grid-cols-1 lg:grid-cols-3 gap-3 text-left p-0">
+                          <NavDropdown.Item
+                            href="#action/3.1"
+                            className="max-w-[333px] px-0 hover:border-l-4 border-indigo-500 "
+                          >
+                            <h6 className="text-[16px] lg:font-bold">
+                              Talk to Sales/Support
+                            </h6>
+                            <p className="hidden lg:block text-[13px] font-normal text-[#020a19]">
+                              Request a call back from the sales/tech support
+                              team
+                            </p>
                           </NavDropdown.Item>
-                          <NavDropdown.Item href="#action/3.2">
-                            Another action
+                          <NavDropdown.Item
+                            href="#action/3.1"
+                            className="max-w-[333px] px-0 hover:border-l-4 border-indigo-500"
+                          >
+                            <h6 className="text-[16px] lg:font-bold">
+                              Schedule a Demo
+                            </h6>
+                            <p className="hidden lg:block text-[13px] font-normal text-[#020a19]">
+                              Request a detailed product walkthrough from the
+                              support
+                            </p>
                           </NavDropdown.Item>
-                          <NavDropdown.Item href="#action/3.3">
-                            Something
+                          <NavDropdown.Item
+                            href="#action/3.1"
+                            className="max-w-[333px] px-0 hover:border-l-4 border-indigo-500"
+                          >
+                            <h6 className="text-[16px] lg:font-bold">
+                              Get a Quote
+                            </h6>
+                            <p className="hidden lg:block text-[13px] font-normal text-[#020a19]">
+                              Request the pricing details of any available plans
+                            </p>
                           </NavDropdown.Item>
 
-                          <NavDropdown.Item href="#action/3.4">
-                            Separated link
+                          <NavDropdown.Item
+                            href="#action/3.1"
+                            className="max-w-[333px] px-0 hover:border-l-4 border-indigo-500"
+                          >
+                            <h6 className="text-[16px] lg:font-bold">
+                              Raise a Ticket
+                            </h6>
+                            <p className="hidden lg:block text-[13px] font-normal text-[#020a19]">
+                              Raise a ticket for any sales and support inquiry
+                            </p>
                           </NavDropdown.Item>
                         </ul>
                       </NavDropdown>

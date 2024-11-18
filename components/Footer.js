@@ -550,7 +550,7 @@ const Footer = () => {
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item
-                eventKey="6"
+                eventKey="7"
                 className="md:col-span-1 xl:col-span-5 md:order-3 lg:order-none"
               >
                 <Accordion.Header>
@@ -558,21 +558,21 @@ const Footer = () => {
                 </Accordion.Header>
                 <Accordion.Body>
                   <div>
-                    <ul className="p-0 flex gap-3 social_profile flex-wrap">
+                    <ul className="national_flag_wrapper p-0 flex gap-3 social_profile flex-wrap">
                       <li className="">
                         <Link
                           href={"#"}
                           className="no-underline text-[14px] text-[#556575] flex gap-2 items-center"
                         >
                           <p className="mb-0">San Francisco (HQ)</p>
-                          <span className="w-[15px] h-[15px] overflow-hidden flex items-center">
+                          <span className="national_flag w-[15px] h-[15px] overflow-hidden flex items-center rounded-full">
                             {" "}
                             <Image
                               src={Us_flag}
                               width={15}
                               height={15}
                               alt="Picture of the author"
-                              className="z-[2] rounded-full"
+                              className="z-[2] object-cover h-full"
                             />
                           </span>
                         </Link>
@@ -581,17 +581,17 @@ const Footer = () => {
                       <li className="">
                         <Link
                           href={"#"}
-                          className="no-underline text-[14px] text-[#556575] flex items-center"
+                          className="no-underline text-[14px] text-[#556575] gap-2 flex items-center"
                         >
                           <p className="mb-0">Atlanta</p>
-                          <span>
+                          <span className="national_flag w-[15px] h-[15px] overflow-hidden flex items-center rounded-full">
                             {" "}
                             <Image
                               src={Us_flag}
                               width={15}
                               height={15}
                               alt="Picture of the author"
-                              className="z-[2]"
+                              className="z-[2] object-cover h-full"
                             />
                           </span>
                         </Link>
@@ -599,17 +599,17 @@ const Footer = () => {
                       <li className="">
                         <Link
                           href={"#"}
-                          className="no-underline text-[14px] text-[#556575] flex items-center"
+                          className="no-underline text-[14px] text-[#556575] gap-2 flex items-center"
                         >
                           <p className="mb-0">London</p>
-                          <span>
+                          <span className="national_flag w-[15px] h-[15px] overflow-hidden flex items-center rounded-full">
                             {" "}
                             <Image
                               src={Us_flag}
                               width={15}
                               height={15}
                               alt="Picture of the author"
-                              className="z-[2]"
+                              className="z-[2] object-cover h-full"
                             />
                           </span>
                         </Link>
@@ -617,17 +617,17 @@ const Footer = () => {
                       <li className="">
                         <Link
                           href={"#"}
-                          className="no-underline text-[14px] text-[#556575] flex items-center"
+                          className="no-underline text-[14px] text-[#556575] gap-2 flex items-center"
                         >
                           <p className="mb-0">Dubai</p>
-                          <span>
+                          <span className="national_flag w-[15px] h-[15px] overflow-hidden flex items-center rounded-full">
                             {" "}
                             <Image
                               src={Us_flag}
                               width={15}
                               height={15}
                               alt="Picture of the author"
-                              className="z-[2]"
+                              className="z-[2] object-cover h-full"
                             />
                           </span>
                         </Link>
@@ -635,17 +635,17 @@ const Footer = () => {
                       <li className="">
                         <Link
                           href={"#"}
-                          className="no-underline text-[14px] text-[#556575] flex items-center"
+                          className="no-underline text-[14px] text-[#556575] gap-2 flex items-center"
                         >
                           <p className="mb-0">Singapore</p>
-                          <span>
+                          <span className="national_flag w-[15px] h-[15px] overflow-hidden flex items-center rounded-full">
                             {" "}
                             <Image
                               src={Us_flag}
                               width={15}
                               height={15}
                               alt="Picture of the author"
-                              className="z-[2]"
+                              className="z-[2] object-cover h-full"
                             />
                           </span>
                         </Link>
@@ -653,17 +653,17 @@ const Footer = () => {
                       <li className="">
                         <Link
                           href={"#"}
-                          className="no-underline text-[14px] text-[#556575] flex items-center"
+                          className="no-underline text-[14px] text-[#556575] gap-2 flex items-center"
                         >
                           <p className="mb-0">Bangalore</p>
-                          <span>
+                          <span className="national_flag w-[15px] h-[15px] overflow-hidden flex items-center rounded-full">
                             {" "}
                             <Image
                               src={Us_flag}
                               width={15}
                               height={15}
                               alt="Picture of the author"
-                              className="z-[2]"
+                              className="z-[2] object-cover h-full"
                             />
                           </span>
                         </Link>
@@ -671,17 +671,17 @@ const Footer = () => {
                       <li className="">
                         <Link
                           href={"#"}
-                          className="no-underline text-[14px] text-[#556575] flex items-center"
+                          className="no-underline text-[14px] text-[#556575] gap-2 flex items-center"
                         >
                           <p className="mb-0">Delhi</p>
-                          <span>
+                          <span className="national_flag w-[15px] h-[15px] overflow-hidden flex items-center rounded-full">
                             {" "}
                             <Image
                               src={Us_flag}
                               width={15}
                               height={15}
                               alt="Picture of the author"
-                              className="z-[2]"
+                              className="z-[2] object-cover h-full"
                             />
                           </span>
                         </Link>
@@ -689,17 +689,17 @@ const Footer = () => {
                       <li className="">
                         <Link
                           href={"#"}
-                          className="no-underline text-[14px] text-[#556575] flex items-center"
+                          className="no-underline text-[14px] text-[#556575] gap-2 flex items-center"
                         >
                           <p className="mb-0">Chennai</p>
-                          <span>
+                          <span className="national_flag w-[15px] h-[15px] overflow-hidden flex items-center rounded-full">
                             {" "}
                             <Image
                               src={Us_flag}
                               width={15}
                               height={15}
                               alt="Picture of the author"
-                              className="z-[2]"
+                              className="z-[2] object-cover h-full"
                             />
                           </span>
                         </Link>
@@ -707,17 +707,17 @@ const Footer = () => {
                       <li className="">
                         <Link
                           href={"#"}
-                          className="no-underline text-[14px] text-[#556575] flex items-center"
+                          className="no-underline text-[14px] text-[#556575] gap-2 flex items-center"
                         >
                           <p className="mb-0">Kochi</p>
-                          <span>
+                          <span className="national_flag w-[15px] h-[15px] overflow-hidden flex items-center rounded-full">
                             {" "}
                             <Image
                               src={Us_flag}
                               width={15}
                               height={15}
                               alt="Picture of the author"
-                              className="z-[2]"
+                              className="z-[2] object-cover h-full"
                             />
                           </span>
                         </Link>
@@ -727,7 +727,7 @@ const Footer = () => {
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item
-                eventKey="6"
+                eventKey="8"
                 className="md:col-span-1 xl:col-span-1"
               >
                 <Accordion.Header>

@@ -47,7 +47,7 @@ const CustomerStoriesCard = ({
             </div>
           </div>
         </div>
-        <div className="multiTab__testimonialContent col-span-2 rounded-2xl overflow-hidden border-1 border-black pb-8 pr-10 pt-10 pl-16 flex justify-between flex-col">
+        <div className="multiTab__testimonialContent col-span-2 max-h-[440px] min-h-[440px] rounded-2xl overflow-hidden border-1 border-black pb-8 pr-10 pt-10 pl-16 flex justify-between flex-col">
           <div className="multiTab__testimonialContent-info">
             <h4 className="text-[24px] font-bold pb-4 mb-0 border-b">
               {testimonialTitle}

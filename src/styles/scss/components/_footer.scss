@@ -1,4 +1,9 @@
 .footer {
+  .accordion-button::after {
+    @media ($medium-onwards) {
+      display: none;
+    }
+  }
   .social_profile {
     svg {
       width: 20px;
@@ -28,6 +33,19 @@
     .accordion-body {
       padding-left: 0rem;
       padding-right: 0rem;
+    }
+  }
+}
+
+.national_flag_wrapper {
+  li {
+    .national_flag {
+      display: none;
+    }
+    &:hover {
+      .national_flag {
+        display: block;
+      }
     }
   }
 }
